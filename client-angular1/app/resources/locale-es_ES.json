@@ -1,0 +1,18 @@
+{
+    "loading...": "Cargando...",
+    "close": "Cerrar",
+    "create": "Crear",
+    "new": "Nuevo",
+    "view": "Abrir",
+
+    "nav.projects.list.linkTitle": "Proyectos",
+    "views.projects.list.title": "Proyectos",
+    "views.projects.list.justCreated": "The project <strong> {0} </strong> was successfully created",
+    
+    "nav.projects.create.linkTitle": "Nuevo",
+    "views.projects.create.title": "Nuevo proyecto",
+    "views.projects.create.name": "Nombre",
+    "views.projects.create.name.placeholder": "Nombre del proyecto",
+    "views.projects.create.description": "Descripción",
+    "views.projects.create.description.placeholder": "Descripción del proyecto"
+}

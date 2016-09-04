@@ -1,0 +1,32 @@
+<h2>Projects</h2>
+
+<md-toolbar class="md-warn" ng-show="listVm.justCreated">
+    <div class="md-toolbar-tools">
+        <span ng-bind-html="('views.projects.list.justCreated' | translate | format:listVm.justCreated.name)"></span>
+        <span flex></span>
+        <md-button class="md-fab md-mini" aria-label="{{'close' | translate}}" ng-click="listVm.justCreated = undefined">
+            <md-icon>close</md-icon>
+        </md-button>
+    </div>
+</md-toolbar>
+
+<div layout="column">
+    <md-content flex>
+        <md-list flex>
+            <md-toolbar md-scroll-shrink>                
+                <div class="md-toolbar-tools">
+                    <md-button class="md-fab md-mini" aria-label="{{'new' | translate}}" ui-sref="projects.create">
+                        <md-icon>add</md-icon>
+                    </md-button>
+                </div>
+            </md-toolbar>
+            <md-list-item class="md-3-line" ng-repeat="project in listVm.projects" aria-label="{{'view' | translate}}" ng-click="null">
+                <!--<img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}" />-->
+                <div class="md-list-item-text" layout="column">
+                    <h3 ng-bind="project.name"></h3>
+                    <p ng-bind="project.description"></p>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</div>
